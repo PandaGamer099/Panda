@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    background: url('Banner.png') center 4vw ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background-color: #7575e0;
+    color: #110a0a;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #080C42;
+    color: #0c11c2;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #3f3f5f;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #29293b;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(20, 3, 255, 0.274);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555475;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+li {
+    color: #f3f3f3;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    color: #c0c0c0;
+    font-size: 1.2em;
+}
+
+form input, form select, form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    box-shadow: 0 0 10px #3f3f5f;
+}
+
+button {
+    padding: 15px;
+    background-color: #3f3f5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a5a7a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #080C42;
+    color: #fafafa;
+    font-size: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+    header nav ul {
+        gap: 40px;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 40px auto;
+    }
+}
